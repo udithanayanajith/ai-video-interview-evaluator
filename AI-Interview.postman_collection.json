@@ -1,0 +1,59 @@
+{
+	"info": {
+		"_postman_id": "fefd9c26-45af-437c-8959-08e35f9ae5e2",
+		"name": "AI-Interview",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "29462745"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:5000/evaluate",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "video_one",
+							"type": "file",
+							"src": []
+						},
+						{
+							"key": "video_two",
+							"type": "file",
+							"src": []
+						},
+						{
+							"key": "video_three",
+							"type": "file",
+							"src": []
+						},
+						{
+							"key": "video_four",
+							"type": "file",
+							"src": []
+						},
+						{
+							"key": "video_five",
+							"type": "file",
+							"src": []
+						},
+						{
+							"key": "mapping",
+							"value": "{   \"question_one\": { \"keywords\": [\"JDK\", \"JRE\", \"JVM\", \"development\", \"runtime\", \"bytecode\"] },   \"question_two\": { \"keywords\": [\"photosynthesis\", \"JDK\", \"chlorophyll\"] },   \"question_three\": { \"keywords\": [\"atom\", \"proton\", \"neutron\"] },   \"question_four\": { \"keywords\": [\"ecosystem\", \"biodiversity\", \"climate\"] },   \"question_five\": { \"keywords\": [\"voltage\", \"current\", \"resistance\"] } } ",
+							"type": "default"
+						},
+						{
+							"key": "applied_role",
+							"value": "it_intern",
+							"type": "default"
+						}
+					]
+				},
+				"url": "http://127.0.0.1:5000/evaluate"
+			},
+			"response": []
+		}
+	]
+}

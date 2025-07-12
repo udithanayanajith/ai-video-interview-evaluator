@@ -40,8 +40,20 @@ Send POST requests to `/evaluate` endpoint with:
 ### Example Request
 
     curl -X POST -F "video_one=@video1.mp4" -F "video_two=@video2.mp4" \
-    -F "mapping={\"question_one\":{\"keywords\":[\"OOP\",\"inheritance\"]}}" \
+    -F "mapping=
+        {  "question_one": { "keywords": ["JDK", "JRE", "JVM", "development", "runtime", "bytecode"] },
+           "question_two": { "keywords": ["photosynthesis", "JDK", "chlorophyll"] },
+           "question_three": { "keywords": ["atom", "proton", "neutron"] },
+           "question_four": { "keywords": ["ecosystem", "biodiversity", "climate"] },
+           "question_five": { "keywords": ["voltage", "current", "resistance"] }
+        } " \
     -F "applied_role=software_engineer" http://localhost:5000/evaluate
+
+### Personality Keys
+
+- **it_intern**
+- **associate_software_engineer**
+- **software_engineer**
 
 ## API Response Structure
 
