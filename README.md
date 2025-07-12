@@ -1,37 +1,31 @@
-
 # Video Interview Analyzer
+
 ========================
+
+## Author : Uditha Nayanajith - 0766574153
 
 A comprehensive system for evaluating video interview responses using AI analysis, eye tracking, personality assessment, and content evaluation.
 
-Features
---------
+## Features
 
-*   **Content Analysis:** Evaluates answers against expected keywords
-*   **AI Detection:** Identifies potential AI-generated responses
-*   **Eye Tracking:** Measures eye contact and attention metrics
-*   **Personality Assessment:** Simulates Big Five personality traits
-*   **Role Suitability:** Scores candidate fit for different technical roles
-*   **Suspicion Detection:** Flags potential dishonesty or cheating
+- **Content Analysis:** Evaluates answers against expected keywords
+- **AI Detection:** Identifies potential AI-generated responses
+- **Eye Tracking:** Measures eye contact and attention metrics
+- **Personality Assessment:** Simulates Big Five personality traits
+- **Role Suitability:** Scores candidate fit for different technical roles
+- **Suspicion Detection:** Flags potential dishonesty or cheating
 
-Installation
-------------
+## Installation
 
 1.  Clone the repository:
-    
-        git clone https://github.com/yourusername/video-interview-analyzer.git
-    
-2.  Install dependencies:
-    
-        pip install -r requirements.txt
-    
-3.  Create an upload directory:
-    
-        mkdir upload
-    
 
-Usage
------
+        git clone https://github.com/udithanayanajith/ai-video-interview-evaluator.git
+
+2.  Install dependencies:
+
+        pip install -r requirements.txt
+
+## Usage
 
 Start the Flask server:
 
@@ -39,9 +33,9 @@ Start the Flask server:
 
 Send POST requests to `/evaluate` endpoint with:
 
-*   Video files (video\_one to video\_five)
-*   Question mapping JSON
-*   Applied role
+- Video files (video_one to video_five)
+- Question mapping JSON
+- Applied role
 
 ### Example Request
 
@@ -49,39 +43,34 @@ Send POST requests to `/evaluate` endpoint with:
     -F "mapping={\"question_one\":{\"keywords\":[\"OOP\",\"inheritance\"]}}" \
     -F "applied_role=software_engineer" http://localhost:5000/evaluate
 
-API Response Structure
-----------------------
+## API Response Structure
 
 The system returns a comprehensive JSON response including:
 
-*   Question-by-question content evaluation
-*   Personality trait analysis
-*   Eye contact metrics
-*   AI detection results
-*   Role suitability scores
-*   Final composite score
+- Question-by-question content evaluation
+- Personality trait analysis
+- Eye contact metrics
+- AI detection results
+- Role suitability scores
+- Final composite score
 
-Configuration
--------------
+## Configuration
 
 Key configuration options in `app.py`:
 
-*   `UPLOAD_FOLDER`: Directory for temporary files
-*   `MAX_RETRIES`: File operation retry attempts
+- `UPLOAD_FOLDER`: Directory for temporary files
+- `MAX_RETRIES`: File operation retry attempts
 
-Requirements
-------------
+## Requirements
 
 See `requirements.txt` for complete dependency list.
 
-Limitations
------------
+## Limitations
 
-*   Personality traits are currently simulated
-*   Eye tracking requires clear video of face
-*   AI detection has some false positive/negative rate
+- Personality traits are currently simulated
+- Eye tracking requires clear video of face
+- AI detection has some false positive/negative rate
 
-License
--------
+## License
 
 MIT License
