@@ -1,6 +1,6 @@
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 import torch
-from typing import Dict, Any, Tuple
+from typing import Dict, Tuple
 import logging
 
 # Configure logging

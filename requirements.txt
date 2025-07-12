@@ -1,0 +1,10 @@
+Flask
+Flask_Cors
+torch
+transformers
+mediapipe
+opencv-python
+moviepy
+SpeechRecognition
+numpy
+pandas
